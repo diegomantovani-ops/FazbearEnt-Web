@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fazbear Entertainment - Halloween</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-dark text-light">
+
+ 
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom border-warning">
+    <span class="badge bg-danger text-light border border-light animate-pulse">
+  🔴 CAM 01 - AO VIVO [00:42 AM]
+</span>
+    <div class="container">
+      <a class="navbar-brand text-warning fw-bold" href="index.html">🎃 Freddy Fazbear's Pizza</a>
+      <div class="navbar-nav">
+        <a class="nav-link" href="index.html">Início</a>
+        <a class="nav-link" href="animatronics.html">Animatrônicos</a>
+        <a class="nav-link text-danger fw-bold" href="candidatura.html">Vaga de Vigia</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="card card-candidatura bg-black border border-danger text-light shadow-lg">
+          <div class="card-header bg-danger text-white text-center">
+            <h3>🎃 Ficha de Inscrição: Vigia Noturno de Halloween</h3>
+          </div>
+          <div class="card-body p-4">
+
+            <form action="#" method="post">
+              
+             
+              <div class="mb-3">
+                <label for="nome" class="form-label">Nome Completo:</label>
+                <input type="text" class="form-control" id="nome" placeholder="Ex: Mike Schmidt" required>
+              </div>
+
+              <div class="row">
+               
+                <div class="col-md-6 mb-3">
+                  <label for="email" class="form-label">E-mail de Contato:</label>
+                  <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com" required>
+                </div>
+
+                
+                <div class="col-md-6 mb-3">
+                  <label for="telefone" class="form-label">Telefone / Celular:</label>
+                  <input type="tel" class="form-control" id="telefone" placeholder="(00) 00000-0000" required>
+                </div>
+              </div>
+
+              <div class="row">
+                
+                <div class="col-md-6 mb-3">
+                  <label for="portfolio" class="form-label">Link do Portfólio / Canal no YouTube:</label>
+                  <input type="url" class="form-control" id="portfolio" placeholder="https://youtube.com/meucanal">
+                </div>
+
+                
+                <div class="col-md-3 mb-3">
+                  <label for="idade" class="form-label">Idade:</label>
+                  <input type="number" class="form-control" id="idade" min="18" max="99" placeholder="18" required>
+                </div>
+
+                
+                <div class="col-md-3 mb-3">
+                  <label for="dataInicio" class="form-label">Data de Início:</label>
+                  <input type="date" class="form-control" id="dataInicio" required>
+                </div>
+              </div>
+
+             
+              <div class="mb-3">
+                <label for="curriculo" class="form-label">Upload do Currículo ou Ficha Médica (PDF/Image):</label>
+                <input type="file" class="form-control" id="curriculo">
+              </div>
+
+              
+              <div class="mb-3">
+                <label for="turno" class="form-label">Turno Pretendido:</label>
+                <select class="form-select" id="turno" required>
+                  <option value="" selected disabled>Selecione um turno...</option>
+                  <option value="1">Turno 1: 00:00 às 06:00 (Halloween Special)</option>
+                  <option value="2">Turno 2: 06:00 às 12:00 (Limpeza Matutina)</option>
+                  <option value="3">Turno 3: 18:00 às 00:00 (Atendimento ao Público)</option>
+                </select>
+              </div>
+
+             
+              <div class="mb-3">
+                <label class="form-label d-block">Já trabalhou em turnos da noite com animatrônicos?</label>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="experiencia" id="expSim" value="sim">
+                  <label class="form-check-label" for="expSim">Sim</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="experiencia" id="expNao" value="nao" checked>
+                  <label class="form-check-label" for="expNao">Não</label>
+                </div>
+              </div>
+
+             
+              <div class="mb-3">
+                <label class="form-label d-block">Equipamentos de segurança que concorda em operar:</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="equip1" checked>
+                  <label class="form-check-label" for="equip1">Lanterna de Alta Potência</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="equip2">
+                  <label class="form-check-label" for="equip2">Máscara Vazia de Freddy Fazbear</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="equip3">
+                  <label class="form-check-label" for="equip3">Painel de Câmeras em Monitor CRT</label>
+                </div>
+              </div>
+
+             
+              <div class="mb-4">
+                <label for="motivo" class="form-label">Por que você quer trabalhar no Turno da Noite de Halloween?</label>
+                <textarea class="form-control" id="motivo" rows="3" placeholder="Conte brevemente sobre sua coragem e tolerância a sustos..."></textarea>
+              </div>
+
+             
+              <div class="d-flex gap-2 justify-content-end mt-4">
+                <button type="submit" class="btn btn-danger px-4">Enviar Candidatura</button>
+                <button type="reset" class="btn btn-outline-secondary btn-limpar px-4">Limpar</button>
+              </div>
+
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <footer class="mt-auto py-3 text-light">
+    <div class="container">
+      <div class="row align-items-center text-center text-md-start">
+        
+        
+        <div class="col-md-5 mb-3 mb-md-0">
+          <h5 class="text-warning mb-1">🎃 Fazbear Entertainment, Inc.</h5>
+          <p class="small text-muted mb-0">Trazendo fantasia, pizza e diversão à vida desde 1983. Edição Especial de Halloween.</p>
+        </div>
+
+       
+        <div class="col-md-4 mb-3 mb-md-0">
+          <h6 class="text-danger fw-bold">Atendimento & Suporte:</h6>
+          <p class="small mb-1">📞 SAC: 0800-FAZBEAR (0800-329-2327)</p>
+          <p class="small mb-0">✉️ E-mail: suporte@fazbear-pizzeria.com</p>
+        </div>
+
+       
+        <div class="col-md-3 d-flex flex-column align-items-center align-items-md-end justify-content-center">
+          <div class="d-flex align-items-center gap-2 mb-1">
+            <span class="badge bg-outline-warning border border-warning text-warning p-2">
+              © 2026 Fazbear Ent.
+            </span>
+            <img src="https://static.wikia.nocookie.net/freddy-fazbears-pizza/images/8/82/FazbearEntertainment-ARLogo.png/revision/latest?cb=20191130000903" alt="Selo Fazbear Entertainment" class="footer-logo">
+          </div>
+          <p class="small text-muted mb-0">Todos os direitos reservados.</p>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
