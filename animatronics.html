@@ -60,43 +60,94 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td class="d-flex align-items-center gap-3">
-              <img src="Imagens/Dreadbear.jpg" alt="Freddy" class="animatronic-img">
-              <span class="fw-bold fs-5">Freddy Fazbear</span>
-            </td>
-            <td>Jack-O'-Freddy (Luminoso)</td>
-            <td><span class="badge bg-danger">Alto</span></td>
-            <td>Palco Principal</td>
-          </tr>
-          <tr>
-            <td class="d-flex align-items-center gap-3">
-              <img src="Imagens/Jack-O-Bonnie.jpg" alt="Bonnie" class="animatronic-img">
-              <span class="fw-bold fs-5">Bonnie</span>
-            </td>
-            <td>Jack-O'-Bonnie (Laranja)</td>
-            <td><span class="badge bg-warning text-dark">Médio</span></td>
-            <td>Corredor Esquerdo</td>
-          </tr>
-          <tr>
-            <td class="d-flex align-items-center gap-3">
-              <img src="Imagens/Jack-O-Chica.jpg" alt="Chica" class="animatronic-img">
-              <span class="fw-bold fs-5">Chica</span>
-            </td>
-            <td>Pumpkin Chica (Com Abóbora)</td>
-            <td><span class="badge bg-warning text-dark">Médio</span></td>
-            <td>Cozinha / Corredor Direito</td>
-          </tr>
-          <tr>
-            <td class="d-flex align-items-center gap-3">
-              <img src="Imagens/GrimFoxy.jpg" alt="Foxy" class="animatronic-img">
-              <span class="fw-bold fs-5">Foxy</span>
-            </td>
-            <td>Nightmare Foxy (Avariado)</td>
-            <td><span class="badge bg-danger">Extremo</span></td>
-            <td>Pirate Cove</td>
-          </tr>
-        </tbody>
+  <!-- ================= FREDDY ================= -->
+  <tr>
+    <td class="align-middle">
+      <img src="Imagens/Dreadbear.jpg" alt="Freddy Fazbear" class="animatronic-img me-2" 
+           data-bs-toggle="collapse" data-bs-target="#desc-freddy" aria-expanded="false" title="Clique para expandir">
+      Freddy Fazbear
+    </td>
+    <td class="align-middle">Dreadbear (Reanimado)</td>
+    <td class="align-middle"><span class="badge bg-danger">Alto</span></td>
+    <td class="align-middle">Palco Principal</td>
+  </tr>
+  <!-- Linha Oculta do Freddy -->
+  <tr>
+    <td colspan="4" class="p-0 border-0">
+      <div class="collapse" id="desc-freddy">
+        <div class="p-3 bg-black text-warning border-start border-end border-warning border-3 m-1 rounded">
+          <strong>Relatório de Segurança:</strong> O núcleo do endoesqueleto de Dreadbear atinge temperaturas extremas. Ele emite um brilho alaranjado forte no escuro. Monitore a temperatura do sistema de câmeras para evitar sobrecarga térmica.
+        </div>
+      </div>
+    </td>
+  </tr>
+
+  <!-- ================= BONNIE ================= -->
+  <tr>
+    <td class="align-middle">
+      <img src="Imagens/Jack-O-Bonnie.png" alt="Bonnie" class="animatronic-img me-2" 
+           data-bs-toggle="collapse" data-bs-target="#desc-bonnie" aria-expanded="false" title="Clique para expandir">
+      Bonnie
+    </td>
+    <td class="align-middle">Jack-O'-Bonnie (Laranja)</td>
+    <td class="align-middle"><span class="badge bg-warning text-dark">Médio</span></td>
+    <td class="align-middle">Corredor Esquerdo</td>
+  </tr>
+  <!-- Linha Oculta do Bonnie -->
+  <tr>
+    <td colspan="4" class="p-0 border-0">
+      <div class="collapse" id="desc-bonnie">
+        <div class="p-3 bg-black text-warning border-start border-end border-warning border-3 m-1 rounded">
+          <strong>Relatório de Segurança:</strong> Extremamente sorrateiro. Jack-O'-Bonnie costuma desativar as luzes do Corredor Esquerdo antes de atacar. Confie na sua audição para detectar passos pesados próximos à porta.
+        </div>
+      </div>
+    </td>
+  </tr>
+
+  <!-- ================= CHICA ================= -->
+  <tr>
+    <td class="align-middle">
+      <img src="Imagens/Jack-O-Chica.png" alt="Chica" class="animatronic-img me-2" 
+           data-bs-toggle="collapse" data-bs-target="#desc-chica" aria-expanded="false" title="Clique para expandir">
+      Chica
+    </td>
+    <td class="align-middle">Pumpkin Chica (Com Abóbora)</td>
+    <td class="align-middle"><span class="badge bg-warning text-dark">Médio</span></td>
+    <td class="align-middle">Cozinha / Corredor Direito</td>
+  </tr>
+  <!-- Linha Oculta da Chica -->
+  <tr>
+    <td colspan="4" class="p-0 border-0">
+      <div class="collapse" id="desc-chica">
+        <div class="p-3 bg-black text-warning border-start border-end border-warning border-3 m-1 rounded">
+          <strong>Relatório de Segurança:</strong> Ela abandonou seu cupcake padrão por uma abóbora flamejante (Jack-O'-Lantern). O barulho de panelas caindo na cozinha indica que ela está ativa. Se ela chegar ao corredor direito, feche a porta imediatamente.
+        </div>
+      </div>
+    </td>
+  </tr>
+
+  <!-- ================= FOXY ================= -->
+  <tr>
+    <td class="align-middle">
+      <img src="Imagens/GrimFoxy.png" alt="Foxy" class="animatronic-img me-2" 
+           data-bs-toggle="collapse" data-bs-target="#desc-foxy" aria-expanded="false" title="Clique para expandir">
+      Foxy
+    </td>
+    <td class="align-middle">Nightmare Foxy (Avariado)</td>
+    <td class="align-middle"><span class="badge" style="background-color: #8b0000;">Extremo</span></td>
+    <td class="align-middle">Pirate Cove</td>
+  </tr>
+  <!-- Linha Oculta do Foxy -->
+  <tr>
+    <td colspan="4" class="p-0 border-0">
+      <div class="collapse" id="desc-foxy">
+        <div class="p-3 bg-black text-danger border-start border-end border-danger border-3 m-1 rounded">
+          <strong>Relatório de Segurança:</strong> Altamente hostil. Seu gancho e dentes são muito maiores nesta versão de pesadelo. Monitore constantemente a Pirate Cove (CAM 05). Se as cortinas estiverem totalmente abertas, prepare-se para fechar a porta esquerda em segundos.
+        </div>
+      </div>
+    </td>
+  </tr>
+</tbody>
       </table>
     </div>
 
@@ -111,6 +162,15 @@
         <p class="text-muted small mt-2 fs-6">
           ⚠️ <em>Documento confidencial arquivado nos registros de segurança de 1987.</em>
         </p>
+        <br>
+        <div class="newspaper-container p-2">
+          <img src="Imagens/Bt83.png" alt="Recorte de Jornal - Incidente Fazbear" class="img-fluid rounded newspaper-img">
+        </div>
+        
+        <p class="text-muted small mt-2 fs-6">
+          ⚠️ <em>Documento confidencial arquivado nos registros de segurança de 1983.</em>
+        </p>
+
       </div>
     </div>
   </main>
